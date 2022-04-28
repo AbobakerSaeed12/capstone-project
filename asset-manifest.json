@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/capstone-project/static/css/main.576ded9d.css",
-    "main.js": "/capstone-project/static/js/main.d9409cfd.js",
+    "main.js": "/capstone-project/static/js/main.236752fd.js",
     "index.html": "/capstone-project/index.html",
     "main.576ded9d.css.map": "/capstone-project/static/css/main.576ded9d.css.map",
-    "main.d9409cfd.js.map": "/capstone-project/static/js/main.d9409cfd.js.map"
+    "main.236752fd.js.map": "/capstone-project/static/js/main.236752fd.js.map"
   },
   "entrypoints": [
     "static/css/main.576ded9d.css",
-    "static/js/main.d9409cfd.js"
+    "static/js/main.236752fd.js"
   ]
 }
