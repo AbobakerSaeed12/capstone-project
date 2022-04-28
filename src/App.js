@@ -10,7 +10,7 @@ function App() {
     <HashRouter>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/capstone-project">
             Node Blog
           </a>
           <button
@@ -30,7 +30,7 @@ function App() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="/#/Createpost"
+                  href="capstone-project/#/CreatePost"
                 >
                   CreatePost
                 </a>
