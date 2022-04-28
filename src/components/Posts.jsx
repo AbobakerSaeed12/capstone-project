@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Posts.css";
+import { useNavigate } from "react-router-dom";
+
 export const Posts = () => {
   const [messages, setMessages] = useState([]);
+  let navigate = useNavigate();
   useEffect(() => {
     axios
       .get("https://hfxe5q.sse.codesandbox.io/messages")
@@ -11,7 +14,9 @@ export const Posts = () => {
       })
       .then(messages);
   }, [messages]);
-
+  const handleDelete = (id) => {
+    axios.delete(`https://hfxe5q.sse.codesandbox.io/delete/${id}`);
+  };
   return (
     <div className=" container">
       {messages.map((val, key) => {
@@ -37,8 +42,17 @@ export const Posts = () => {
             <div className="buttons">
               <button
                 className="btn btn-primary"
+                onClick={() => {
+                  navigate(`/SinglePost/${val.id}`);
+                }}
               >
                 Read More
+              </button>
+              <button
+                className="btn btn-danger"
+                onClick={() => handleDelete(val.id)}
+              >
+                Delete
               </button>
             </div>
           </div>
