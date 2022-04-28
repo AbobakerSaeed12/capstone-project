@@ -1,13 +1,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { CreatePost } from "./components/CreatePost";
 import { Posts } from "./components/Posts.jsx";
 import SinglePost from "./components/SinglePost";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
@@ -44,7 +44,7 @@ function App() {
         <Route path="/CreatePost" element={<CreatePost />} />
         <Route path="/SinglePost/:postId" element={<SinglePost />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
