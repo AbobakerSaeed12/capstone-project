@@ -1,0 +1,24 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50%;
+    min-width: 50%;
+    border: 2px solid black;
+    font-size: 23px;
+}
+
+form input {
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    font-size: 23px;
+  }
