@@ -12,6 +12,7 @@ export const CreatePost = () => {
   const redirect = () => {
     navigate("/");
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -29,6 +30,7 @@ export const CreatePost = () => {
       alert("enter a post");
     }
   };
+
   return (
     <div className="form">
       <form>
