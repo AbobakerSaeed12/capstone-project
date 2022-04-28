@@ -9,13 +9,19 @@ export const CreatePost = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-     
+    if (
+      message.trim().length &&
+      title.trim().length &&
+      author.trim().length > 0
+    ) {
       axios.post("https://hfxe5q.sse.codesandbox.io/messages/new", {
         title: title,
         author: author,
         message: message,
       });
-     
+    } else {
+      alert("enter a post");
+    }
   };
   return (
     <div className="form">
