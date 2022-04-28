@@ -1,12 +1,17 @@
 import axios from "axios";
 import React, { useState } from "react";
 import "./CreatePost.css";
+import { useNavigate } from "react-router-dom";
 
 export const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [message, setMessage] = useState("");
+  let navigate = useNavigate();
 
+  const redirect = () => {
+    navigate("/");
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
@@ -19,6 +24,7 @@ export const CreatePost = () => {
         author: author,
         message: message,
       });
+      redirect();
     } else {
       alert("enter a post");
     }
