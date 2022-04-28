@@ -30,7 +30,7 @@ function App() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="/Createpost"
+                  href="/#/Createpost"
                 >
                   CreatePost
                 </a>
@@ -39,6 +39,7 @@ function App() {
           </div>
         </div>
       </nav>
+
       <Routes>
         <Route path="/" element={<Posts />} />
         <Route path="/CreatePost" element={<CreatePost />} />
