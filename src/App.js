@@ -30,7 +30,7 @@ function App() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="capstone-project/#/CreatePost"
+                  href="/#/CreatePost"
                 >
                   CreatePost
                 </a>
