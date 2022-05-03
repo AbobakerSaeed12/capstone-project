@@ -1,4 +1,3 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { CreatePost } from "./components/CreatePost";
@@ -30,7 +29,7 @@ function App() {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="#/CreatePost"
+                  href="/capstone-project/#/CreatePost"
                 >
                   CreatePost
                 </a>
