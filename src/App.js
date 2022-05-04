@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { CreatePost } from "./components/CreatePost";
-import { Posts } from "./components/Posts.jsx";
-import SinglePost from "./components/SinglePost";
+import { CreatePost } from "./components/CreatePost/CreatePost";
+import { Posts } from "./components/Posts/Posts";
+import SinglePost from "./components/SinglePost/SinglePost";
 
 function App() {
   return (
