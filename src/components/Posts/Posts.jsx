@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export const Posts = () => {
   const [messages, setMessages] = useState([]);
   let navigate = useNavigate();
-  
+
   useEffect(() => {
     axios
       .get("https://hfxe5q.sse.codesandbox.io/messages")
@@ -25,16 +25,9 @@ export const Posts = () => {
       {messages.map((val, key) => {
         return (
           <div className="Post card" key={key}>
-            <h1>
-              {val.title.length > 20
-                ? val.title.substring(0, 20) + "..."
-                : val.title}
-            </h1>
+            <h1>{val.title}</h1>
             <h5>
-              By{" "}
-              {val.author.length > 100
-                ? val.author.substring(0, 100) + "..."
-                : val.author + " "}
+              By {val.author}
               on ({val.time})
             </h5>
             <h3>

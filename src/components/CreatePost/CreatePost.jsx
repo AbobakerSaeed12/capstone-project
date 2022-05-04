@@ -40,6 +40,7 @@ export const CreatePost = () => {
           name="title"
           id="title"
           placeholder="Title"
+          maxlength="40"
           onChange={(e) => {
             setTitle(e.target.value);
           }}
@@ -50,20 +51,21 @@ export const CreatePost = () => {
           name="author"
           id="author"
           placeholder="Author"
+          maxlength="20"
           onChange={(e) => {
             setAuthor(e.target.value);
           }}
         />
         <label htmlFor="message">Message: </label>
-        <input
-          type="text"
+        <textarea
+        
           name="message"
           placeholder="Message"
           id="message"
           onChange={(e) => {
             setMessage(e.target.value);
           }}
-        />
+        ></textarea>
         <button
           type="submit"
           className="btn btn-success"
