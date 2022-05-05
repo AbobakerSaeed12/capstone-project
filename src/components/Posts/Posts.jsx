@@ -27,7 +27,7 @@ export const Posts = () => {
           <div className="Post card" key={key}>
             <h1>{val.title}</h1>
             <h5>
-              By {val.author}
+              By {val.author} {""}
               on ({val.time})
             </h5>
             <h3>
