@@ -16,4 +16,3 @@ CodeSandBox: https://codesandbox.io/s/eloquent-cloud-hfxe5q
 **I WANT TO** help people stay motivated
 **SO THAT** they can be healthy.
 
-Pagination coming soon
